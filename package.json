@@ -1,11 +1,11 @@
 {
   "name": "hello-world-imba",
-  "description": "Hello World for Imba",
+  "description": "Hello World for Imba SFC",
   "keywords": [
     "imba"
   ],
-  "author": "Sindre Aarsaether",
-  "bugs": "https://github.com/somebee/hello-world-imba/issues",
+  "author": "Alexander Alemayhu",
+  "bugs": "https://github.com/somebee/hello-world-imba-sfc/issues",
   "version": "1.0.0",
   "engines": {
     "node": ">=6.0.0"
@@ -21,14 +21,12 @@
   "homepage": "http://imba.io",
   "repository": {
     "type": "git",
-    "url": "git://github.com/somebee/hello-world-imba.git"
+    "url": "git://github.com/somebee/hello-world-imba-sfc.git"
   },
   "license": "MIT",
   "dependencies": {
-    "css-loader": "^3.2.0",
     "express": "^4.17.1",
-    "imba": "^1.4.8",
-    "style-loader": "^1.0.0",
+    "imba": "1.5.1",
     "webpack": "^4.39.3",
     "webpack-dev-server": "^3.8.0"
   },
