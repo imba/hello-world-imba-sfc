@@ -12,6 +12,8 @@ var store = {
 
 ### css
 
+:focus { outline: none !important; }
+
 html,body {
     width: 100%;
     height: 100%;
