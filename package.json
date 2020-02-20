@@ -11,10 +11,9 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "start": "imba src/server.imba",
-    "dev": "webpack-dev-server --hot --content-base dist/",
-    "build": "webpack --mode=production",
-    "watch": "webpack --mode=development --watch --progress --colors --display-modules"
+    "start": "imba-rollup --watch --serve --hmr",
+    "dev": "imba-rollup --watch --serve --hmr",
+    "build": "imba-rollup"
   },
   "files": [],
   "directories": {},
@@ -26,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "imba": "1.5.1",
+    "imba": "^2.0.0-alpha.29",
     "webpack": "^4.39.3",
     "webpack-dev-server": "^3.8.0"
   },

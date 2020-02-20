@@ -1,19 +1,20 @@
-export tag App
+tag app-root
+
 	def addItem
-		data:items.push(title: data:title)
-		data:title = ""
+		self.data.items.push(title: self.data.title)
+		self.data.title = ""
 
 	def completeItem item
 		console.log "clicked,{item:completed}"
-		item:completed = !item:completed
-		
+		item.completed = !item.completed
+		 
 	def render
 		<self.vbox>
 			<header>
-				<input[data:title] placeholder="New..." :keyup.enter.addItem>
+				<input[self.data.title] placeholder="New..." :keyup.enter.addItem>
 				<button :tap.addItem> 'Add item'
-			<ul> for item in data:items
-				<li .{item:completed and completed} :tap.completeItem(item)> item:title
+			<ul> for item in self.data.items
+				<li .{item.completed and completed} :tap.completeItem(item)> item.title
 
 ### css scoped
 .vbox {
@@ -27,7 +28,7 @@ export tag App
     text-decoration: line-through;
 }
 
-.App {
+app-root {
     background: white;
 }
 ###

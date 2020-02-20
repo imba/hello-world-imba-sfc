@@ -1,4 +1,4 @@
-import {App} from './app'
+import './app'
 
 var store = {
 	title: ""
@@ -94,5 +94,5 @@ li {
 }
 ###
 
-Imba.mount <App[store]>
+imba.mount <app-root data=store>
 
