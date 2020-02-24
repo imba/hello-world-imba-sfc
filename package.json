@@ -25,11 +25,9 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "imba": "^2.0.0-alpha.29",
-    "webpack": "^4.39.3",
-    "webpack-dev-server": "^3.8.0"
+    "imba": "^2.0.0-alpha.30"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.7"
+    "imba-rollup": "^2.0.0-alpha.30"
   }
 }
