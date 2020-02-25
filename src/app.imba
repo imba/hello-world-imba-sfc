@@ -12,9 +12,9 @@ tag app-root
 		<self.vbox>
 			<header>
 				<input[self.data.title] placeholder="New..." :keyup.enter.addItem>
-				<button :tap.addItem> 'Add item'
+				<button :click.addItem> 'Add item'
 			<ul> for item in self.data.items
-				<li .{item.completed and completed} :tap.completeItem(item)> item.title
+				<li .{item.completed and completed} :click.completeItem(item)> item.title
 
 ### css scoped
 .vbox {
